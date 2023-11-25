@@ -6,7 +6,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #3e4560;
-    color: wheat;
+    color: white;
 }
 
 .container {
@@ -16,7 +16,7 @@ body {
 h1 {
     text-align: center;
     margin: 20px;
-    color: d6d5ac;
+    color: #d6d5ac;
 }
 
 label {
