@@ -18,12 +18,6 @@ const isValidHex = (hex) => {
     return strippedHex.length === 3 || strippedHex.length === 6;
 }
 
-//Create a function to convert Hex to RGB
-//this should work with 3 or 6 character hex values
-//Hint - use parseInt("", 16) to convert a hex value to a decimal value
-//should return an object with 3 properties - r,g, and b
-//Test your function with a few different use cases
-
 const convertHexToRGB = (hex) => {
     if(!isValidHex(hex)) return null;
 
@@ -42,4 +36,19 @@ const convertHexToRGB = (hex) => {
     return {r, g, b}
 }
 
-console.log(convertHexToRGB("000"));
+//create the function converRGBToHex
+//take in 3 parameters - r,g, and b
+//for each (r,g,b) - create a hex pair that is two characters long
+//return hex value starting with a hashtag
+//example - r.toString(16)
+
+const converRGBToHex = (r, g, b) => {
+    const firstPair = ("0" + r.toString(16)).slice(-2);
+    const secondPair = ("0" + g.toString(16)).slice(-2);
+    const thirdPair = ("0" + b.toString(16)).slice(-2);
+
+    const hex = "#" + firstPair + secondPair + thirdPair;
+    return hex;
+}
+
+console.log(converRGBToHex(0, 255, 255));
