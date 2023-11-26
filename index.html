@@ -12,7 +12,7 @@
     <h1>Lighten/Darken color</h1>
     <div class="container">
         <label for="hex">Color (Hex)</label>
-        <input type="text" name="hex" id="hexInput" placeholder="#000000">
+        <input type="text" name="hex" id="hexInput" placeholder="#000000" value="#c6d5ac">
         <p>Lighten</p>
         <!--Custom Toggle-->
         <p>Darken</p>
@@ -20,7 +20,7 @@
         <input type="range" min="0" max="100" value="0" class="slider" name="slider" id="slider">
         <p>Input Color</p>
         <div id="inputColor" class="box"></div>
-        <p>Altered Color <span>#</span></p>
+        <p>Altered Color <span id="alteredColorText">#</span></p>
         <div id="alteredColor" class="box"></div>
     </div>
 </body>
