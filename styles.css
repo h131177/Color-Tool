@@ -42,11 +42,6 @@ input[type="text"] {
     margin-bottom: 25px;
 }
 
-/* display labels and toggle horizontally */
-/* style the toggle button as well as the inner circle  using explicit sizing */
-/* choose fun colors */
-/*  define an unselected class that will de-emphasize the non-selected text */
-
 .toggle {
     display: flex;
     align-items: center;

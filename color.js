@@ -5,6 +5,23 @@ const slider = document.getElementById("slider");
 const sliderText = document.getElementById("sliderText");
 const alteredColor = document.getElementById("alteredColor");
 const alteredColorText = document.getElementById("alteredColorText");
+//lightenText, darkenText, toggleBtn
+const lightenText = document.getElementById("lightenText");
+const darkenText = document.getElementById("darkenText");
+const toggleBtn = document.getElementById("toggleBtn");
+
+//click event listener to the toggle btn
+toggleBtn.addEventListener('click', () => {
+    if(toggleBtn.classList.contains('toggled')) {
+        toggleBtn.classList.remove('toggled');
+        darkenText.classList.add('unselected');
+        lightenText.classList.remove('unselected');
+    } else {
+        toggleBtn.classList.add('toggled');
+        lightenText.classList.add('unselected');
+        darkenText.classList.remove('unselected');
+    }
+})
 
 hexInput.addEventListener('keyup', () => {
     const hex = hexInput.value;
