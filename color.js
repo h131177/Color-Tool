@@ -5,12 +5,10 @@ const slider = document.getElementById("slider");
 const sliderText = document.getElementById("sliderText");
 const alteredColor = document.getElementById("alteredColor");
 const alteredColorText = document.getElementById("alteredColorText");
-//lightenText, darkenText, toggleBtn
 const lightenText = document.getElementById("lightenText");
 const darkenText = document.getElementById("darkenText");
 const toggleBtn = document.getElementById("toggleBtn");
 
-//click event listener to the toggle btn
 toggleBtn.addEventListener('click', () => {
     if(toggleBtn.classList.contains('toggled')) {
         toggleBtn.classList.remove('toggled');
@@ -86,14 +84,11 @@ const increaseWithin0To255 = (hex, amount) => {
 }
 
 slider.addEventListener('input', () => {
-
-    //check if hex is valid
-    if(isValidHex(hexInput.value)) {
-        sliderText.textContent = `${slider.value}%`;
-        //get the altered hex value
-        //update the altered color
-        const alteredHex = alterColor(hexInput.value, slider.value);
-        alteredColor.style.backgroundColor = alteredHex;
-        alteredColorText.innerText = alteredHex;
-    }
+    if(!isValidHex(hexInput.value)) return;
+    
+    sliderText.textContent = `${slider.value}%`;
+        
+    const alteredHex = alterColor(hexInput.value, slider.value);
+    alteredColor.style.backgroundColor = alteredHex;
+    alteredColorText.innerText = alteredHex;
 })
