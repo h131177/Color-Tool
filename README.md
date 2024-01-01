@@ -12,22 +12,13 @@ Build a cool color lighten/darken tool from scratch and sharpen up your HTML, CS
 
 You'll learn:
 
-Check for a valid hex color
-
-Convert hex to RGB
-
-Display percentage from slider
-
-Alter color by percentage
-
-Create a toggle
-
-Reset functionality
-
-parseInt
-
-textContent
-
-Math.min and Math.max
-
-HTML DOM style Property
+- Check for a valid hex color
+- Convert hex to RGB
+- Display percentage from slider
+- Alter color by percentage
+- Create a toggle
+- Reset functionality
+- parseInt
+- textContent
+- Math.min and Math.max
+- HTML DOM style Property
