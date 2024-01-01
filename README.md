@@ -11,6 +11,7 @@ Course level: Intermediate
 Build a cool color lighten/darken tool from scratch and sharpen up your HTML, CSS and vanilla JavaScript skills along the way!
 
 You'll learn:
+
 Check for a valid hex color
 
 Convert hex to RGB
